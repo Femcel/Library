@@ -5,9 +5,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+	<script src="script.js" defer></script>
 </head>
 <body>
-	
+	<div id="container">
+		
+		<button id="new_book">ADD BOOK</button>
+
+		<dialog>
+			<form id="form">
+				<label for="title">Title: </label> </br>
+				<input id="title" type="text"></br>
+
+				<label for="author">Author: </label></br>
+				<input id="author" type="text"></br>
+
+				<label for="pages">Pages: </label></br>
+				<input id="pages" type="number"> </br>
+
+				<input type="submit" formmethod="post" value="Submit" id="submit">
+				<button id="close_dialog" autofocus>Close</button>
+			</form>
+			
+			
+		</dialog>
+		
+	</div>
 </body>
 </html>
