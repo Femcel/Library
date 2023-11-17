@@ -1,0 +1,42 @@
+:root{
+
+}
+
+html, body {
+	padding:0;
+	margin:0;
+}
+h1 {
+	margin-top: 0;
+}
+
+body {
+	display: grid;
+	height: 100vh;
+	grid-template-rows: 1fr 6fr 1fr;
+}
+
+#header {
+	border-bottom: 1px solid rgba(240, 237, 237, 0.53);
+	background-color: rgba(241, 235, 235, 0.718);
+}
+
+#container {
+	display: grid;
+	grid-template-rows: 1fr 4fr;
+	align-items: center;
+
+	background-color: violet;
+	
+}
+
+.book_card {
+	background-color: pink;
+	width: 400px;
+	border: 1px solid purple;
+}
+
+#footer {
+
+	background-color: rgb(27, 173, 173);
+}
