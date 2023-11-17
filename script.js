@@ -4,11 +4,12 @@ const containerDiv = document.getElementById("container");
 const dialog = document.querySelector("dialog");
 const newBtn = document.getElementById("new_book");
 const closeForm = document.getElementById("close");
+const submitBtn = document.querySelector("#submit");
+const form = document.querySelector("#form");
+
 const title = document.querySelector("#title");
 const author = document.querySelector("#author");
 const pages = document.querySelector("#pages");
-const submitBtn = document.querySelector("#submit");
-const form = document.querySelector("#form");
 
 function Book (title, author, pages) {
 	this.title = title;
@@ -21,9 +22,13 @@ function addToLibrary(book) {
 }
 
 function addToPage(book) {
+	let div = document.createElement("div");
+	div.classList.add("book_card"); 
+	containerDiv.appendChild(div);
+
 	let para = document.createElement("p");
-	para.textContent = `${book.title} `;
-	containerDiv.appendChild(para);
+	para.textContent = `${book.title} || ${book.author} || ${book.pages}`;
+	div.appendChild(para);
 }
 
 submitBtn.addEventListener('click', (Event) => {
